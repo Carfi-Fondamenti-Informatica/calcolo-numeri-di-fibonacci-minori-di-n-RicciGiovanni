@@ -1,17 +1,19 @@
-#include <iostream>
 using namespace std;
+#include <iostream>
 
-int main() {
-   int a=1,b=1,c=1,n=0;
-   cin>>n;
-   if(n>=c){
-      cout<<c<<endl;
-      for(;c<=n;){
-         cout<<c<<endl;
-         c=b+a;
-         b=a;
-         a=c;
-      }
-   }
-   return 0;
+int main()
+{
+int a=0, b=1, n, k;
+
+cin>>n;
+
+do{
+cout<<b<<endl;
+k=b;
+b=b+a;
+a=k;
+}while(b<=n);
+
+
+return 0;
 }
